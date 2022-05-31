@@ -516,7 +516,7 @@ const tick = () => {
   raycaster.setFromCamera(mouse, camera);
   if (mesh) {
     const intersects = raycaster.intersectObject(mesh);
-
+    
     if (intersects.length) {
       if (!currentIntersect) {
         console.log("mouse enter");
